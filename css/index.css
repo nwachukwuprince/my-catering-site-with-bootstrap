@@ -1,0 +1,230 @@
+/* Rule 1*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*all buttons*/
+button{
+    background-image: linear-gradient(to right, rgba(90, 98, 104, 1), rgba(255, 0, 0, 1))
+}
+/*end of rules*/
+
+
+
+/*NAVBAR*/
+.navbar{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    /*background: rgba(0, 0, 0, 1);*/
+    background: rgba(0, 0, 0, 0.85);
+    /*opacity: 0.85;*/
+    width: 90%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.navDiv .navbar .navbar-toggler{
+    margin-left: 15px;
+}
+.navDiv .navbar .collapse li a{
+    color: white;
+}
+.navDiv .navbar .collapse li a:hover{
+    color: rgba(225, 225, 225, 0.8);
+}
+/*media Querry for navbar*/
+@media screen and (max-width: 991px){
+    .navbar{
+        left: 0px;
+    }
+    .navDiv .navbar .collapse{
+        background: rgba(90, 98, 104, 0.9);
+        padding-left: 25px;
+        font-size: 17px;
+    }
+    .navDiv .navbar .navbar-toggler{
+
+    }
+    .navDiv .navbar .collapse ul{
+    display: block;
+    }
+}
+@media screen and (max-width: 560px){
+    .navDiv .navbar .collapse{
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 390px){
+    .navDiv .navbar .navbar-toggler{
+        width: 37px;
+        height: 32px;
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+    .navbar-toggler-icon{
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -5px;
+    }
+}
+@media screen and (max-width: 360px){
+    .navDiv .navbar .collapse ul{
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
+
+
+
+/*CAROUSEL*/
+#carouselExampleFade{
+    position: relative;
+    height: 550px;
+    background-image: linear-gradient(to right, rgba(90, 98, 104, 1), rgba(255, 0, 0, 1))
+}
+/*reducing carousel image brightness*/
+#carouselExampleFade div .carousel-item img{
+    filter: brightness(0.6);
+}
+#carouselExampleFade .carousel-item .carousel-caption{
+    bottom: 33%;
+}
+
+/*media querry for carousel */
+@media screen and (max-width: 800px){
+    #carouselExampleFade,
+    #carouselExampleFade .carousel-inner .carousel-item img{
+        height: 450px;
+    }
+}
+@media screen and (max-width: 660px){
+    #carouselExampleFade .carousel-inner .carousel-item img{
+        height: 400px;
+    }
+    #carouselExampleFade{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 560px){
+    #carouselExampleFade .carousel-inner .carousel-item img{
+        height: 300px;
+    }
+    #carouselExampleFade{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 360px){
+    #carouselExampleFade .carousel-inner .carousel-item img{
+        height: 290px;
+    }
+    #carouselExampleFade{
+        height: 290px;
+    }
+}
+
+
+
+/*CARDS*/
+/*background*/
+#section1 {
+    background-image: linear-gradient(to bottom, rgba(57, 18, 14, 1), rgba(90, 98, 104, 0.7));
+}
+.card{
+    filter: brightness(0.8);
+    /*background-image: linear-gradient(to bottom, rgba(57, 18, 14, 1), rgba(90, 98, 104, 0.7));*/
+}
+#section1 #container{
+    max-width: 1000px;
+    margin: auto;
+}
+/*img*/
+#section1 #container img{
+    width: 100%;
+}
+/* the cards*/
+.card{
+    max-width: 300px;
+    margin-top: -100px;
+    z-index: 1;
+    text-align: center;
+}
+/*buttons*/
+#section1 .card a{
+    background-image: linear-gradient(to right, rgba(90, 98, 104, 1), rgba(255, 0, 0, 1));    
+}
+
+/*Media Querry*/
+@media screen and (max-width: 767px){
+    #section1 #container{
+        max-width: 400px;
+    }
+    #section1 #container .card{
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+        box-shadow: ;
+        background-image: linear-gradient(to bottom, rgba(57, 18, 14, 0.9), rgba(225, 225, 225, 1));
+        /*rgba(90, 98, 104, 1))*/
+    }
+    #section1 #container #cardWithZ-index{
+        margin-top: -80px
+    }
+}
+@media screen and (max-width: 360px){
+    #section1 #container #cardWithZ-index{
+        margin-top: -40px;
+    }
+    #section1 #container .card{
+        max-width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+-/*Min-width Media Querry*/-
+--/*left & right margin for the cards container*/
+/*@media screen and (min-width: 767px){
+    #section1 #container{
+        margin-left: 3px;
+    }
+    #section1 #container{
+        margin-right: 3px;
+    }
+}*/
+
+
+-/*Max-width Media Querry*/-
+}*/
+/*@media screen and (max-width: 767px){
+    #section1{
+    background-image: linear-gradient(to bottom, rgba(57, 18, 14, 1), rgba(90, 98, 104, 1));
+    background: red;
+    
+}*/
+    /*#section1 #container{*/
+        background: red;
+        /*max-width: 200px;
+        margin-left: 200px;*/
+    }
+
+    /*#section1 #container .card{
+        max-width: 100%;
+        margin: auto;
+    }*/
+}
+/*@media screen and (max-width: 440px){
+    #section1 #container{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}*/
